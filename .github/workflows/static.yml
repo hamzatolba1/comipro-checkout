@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comipro Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #e7f4ec, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .checkout-container {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      animation: fadeInUp 0.8s ease;
+    }
+    h1 {
+      color: #2c6e49;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    p {
+      color: #4d4d4d;
+      margin-bottom: 2rem;
+    }
+    .checkout-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: bounce 2s infinite;
+    }
+    .checkout-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(76, 175, 80, 0.3);
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <lord-icon
+        src="https://cdn.lordicon.com/slkvcfos.json"
+        trigger="loop"
+        delay="1500"
+        colors="primary:#4CAF50"
+        style="width:80px;height:80px">
+    </lord-icon>
+    <h1>Ready to Checkout?</h1>
+    <p>You're one step away from a natural and elegant experience with Comipro 🌿</p>
+    <a class="checkout-button" href="https://comipro.ma/cart">Checkout Now</a>
+  </div>
+</body>
+</html>
